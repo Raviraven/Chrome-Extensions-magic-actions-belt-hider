@@ -3,8 +3,9 @@
 	"name" : "Chrome-Extension magic actions belt hider",
 	"version" : "0.0.1",
 	"content_scripts" : [
-		{
-             "js" : ["content.js"]
+		  {
+        "matches": ["https://www.youtube.com/*"],
+        "js" : ["content.js"]
       }
      ],
      "background": {
